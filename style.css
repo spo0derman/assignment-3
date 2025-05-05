@@ -7,27 +7,18 @@
 
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f9f9f9;
-}
-
-/* Header */
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2rem;
+    background: #FFF8F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Navigation */
 nav {
-    background: #444;
     padding: 0.5rem;
 }
 
@@ -35,6 +26,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    
 }
 
 nav ul li {
@@ -42,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #3E302B;
     text-decoration: none;
     font-weight: bold;
 }
@@ -56,8 +48,19 @@ main {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+#delivery{
+    background: #C0392B;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
 /* Product Grid */
 .product-grid {
     display: grid;
