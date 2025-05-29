@@ -1,0 +1,44 @@
+.banner{
+    width: 100vw;
+    height: 40vh;
+    background-color: #C0392B;
+    
+}
+
+.banner-one{
+    background-color: #C0392B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #C0392B, #F6D365);
+}
+
+.banner-one .product{
+
+    width: 40vw;
+}
+
+.banner-one .text-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 3vw;
+}
+
+.shop-now{
+    padding: 16px 16px;
+    font-size: 1rem;
+    font-weight: 1000;
+    margin: 16px 0 0;
+    background: #FBE8D3;
+    width: 10vw;
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    bottom: -90px;
+    color: #C0392B;
+}
+

@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My E-Commerce Website</title>
+    <title>India at Home</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="carousel.css">
+     <link rel="stylesheet" href="banner.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="center-line"></div>
+    <!-- <div class="center-line"></div> -->
     <section id="delivery">
         <p>FREE DELIVERY IN MELBOURNE ON ORDERS WORTH $99+</p>
     </section>
@@ -46,46 +48,125 @@
     </nav>
 
     <main>
-        <section id="home">
-            <h2>Welcome to Our Store</h2>
-            <p>Discover the best products at unbeatable prices!</p>
-        </section>
+        <div class="banner">
+            <ul class="banner">
+                <li class="banner-item banner-one">
+                    <button class="carousel-button banner-nav left">&lt;</button>
+                    <div class="text-button">
+                        <img src="images/b1-1text.png" alt="get snacks" class="text">
+                        <button class="shop-now">Shop Now</button>
+                    </div>
+                    
+                    <img src="images/b1-1pers.png" alt="woman" class="person">
+                    <img src="images/b1-1prod.png" alt="products" class="product">
+                    
+                    <button class="carousel-button banner-nav right">&gt;</button>
+                </li>
+            </ul>
+        </div>
 
-        <section id="products">
-            <h2>Our Products</h2>
-            <div class="product">
-                <h3>Product 1</h3>
-                <p>Description of Product 1</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product">
-                <h3>Product 2</h3>
-                <p>Description of Product 2</p>
-                <button>Add to Cart</button>
-            </div>
-        </section>
+        <div class="carousel-container">
+            <button class="carousel-button categories-nav left">&lt;</button>
+            
+            <ul class="carousel" id="categories">
+                <li class="item">
+                    <a href="/collections/groceries" class="item-link">
+                    <img src="https://www.indiaathome.com.au/cdn/shop/files/01-Category-icons-Groceries_180x.png?v=1655481741" alt="Groceries" class="item-image">
+                    <h2 class="item-title">Groceries</h2>
+                    </a>
+                </li>
 
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are dedicated to providing the best shopping experience.</p>
-        </section>
+                <li class="item">
+                    <a href="/collections/herbs-spices" class="item-link">
+                    <img src="https://www.indiaathome.com.au/cdn/shop/files/02-Category-icons-Herbs-_-Spices_180x.png?v=1655481762" alt="Herbs and Spices" class="item-image">
+                    <h2 class="item-title">Herbs & Spices</h2>
+                    </a>
+                </li>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
+                <li class="item">
+                    <a href="/collections/oil-ghee" class="item-link">
+                    <img src="https://www.indiaathome.com.au/cdn/shop/files/03-Category-icons-Oil-_-Ghee_180x.png?v=1655481779" alt="Oil and Ghee" class="item-image">
+                    <h2 class="item-title">Oil & Ghee</h2>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="/collections/daily-use-pooja-products" class="item-link">
+                    <img src="https://www.indiaathome.com.au/cdn/shop/files/04-Category-icons-Prayer-Items_180x.png?v=1655481797" alt="Prayer Items" class="item-image">
+                    <h2 class="item-title">Prayer Items</h2>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="/collections/pickles-paste-chutney-sauces" class="item-link">
+                    <img src="https://www.indiaathome.com.au/cdn/shop/files/05-Category-icons-Pickles-_-Pastes_180x.png?v=1655481820" alt="Pickles and Pastes" class="item-image">
+                    <h2 class="item-title">Pickles & Pastes</h2>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="/collections/rice-flour" class="item-link">
+                    <img src="https://www.indiaathome.com.au/cdn/shop/files/06-Category-icons-Rice-_-Flours_180x.png?v=1655481855" alt="Rice and Flours" class="item-image">
+                    <h2 class="item-title">Rice & Flours</h2>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="/collections/biscuits" class="item-link">
+                    <img src="https://www.indiaathome.com.au/cdn/shop/files/07-Category-icons-Biscuits_180x.png?v=1655481876" alt="Biscuits" class="item-image">
+                    <h2 class="item-title">Biscuits</h2>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="/collections/candies-and-lollies" class="item-link">
+                    <img src="https://www.indiaathome.com.au/cdn/shop/files/08-Category-icons-Candies_180x.png?v=1655481895" alt="Candies" class="item-image">
+                    <h2 class="item-title">Candies</h2>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="/collections/tsf-dried-nuts" class="item-link">
+                    <img src="https://www.indiaathome.com.au/cdn/shop/files/09-Category-icons-Snacks_180x.png?v=1655482040" alt="Snacks" class="item-image">
+                    <h2 class="item-title">Snacks</h2>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="/collections/sweets" class="item-link">
+                    <img src="https://www.indiaathome.com.au/cdn/shop/files/10-Category-icons-Sweets-_-Desserts_180x.png?v=1655482073" alt="Sweets and Desserts" class="item-image">
+                    <h2 class="item-title">Sweets & Desserts</h2>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="/collections/utensils" class="item-link">
+                    <img src="https://www.indiaathome.com.au/cdn/shop/files/11-Category-icons-Utensils_180x.png?v=1655481946" alt="Utensils" class="item-image">
+                    <h2 class="item-title">Utensils</h2>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="/collections/sports-and-games" class="item-link">
+                    <img src="https://www.indiaathome.com.au/cdn/shop/files/imgv2-hdemo-1_180x.png?v=1628154721" alt="Sports and Games" class="item-image">
+                    <h2 class="item-title">Sports & Games</h2>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="carousel-button categories-nav right">&gt;</button>
+        </div>
+
+        
+
+
+
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
     </main>
 
     <footer>
-        <p>&copy; 2025 My E-Commerce Website. All rights reserved.</p>
+        <p>&copy; 2025 India at Home. All rights reserved.</p>
     </footer></section>
 </body>
 
