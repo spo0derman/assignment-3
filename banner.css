@@ -1,11 +1,11 @@
 .banner{
     width: 100vw;
     height: 40vh;
-    background-color: #C0392B;
-    
 }
 
 .banner-one{
+    width: 100%;
+    height: 100%;
     background-color: #C0392B;
     display: flex;
     flex-direction: row;
@@ -14,9 +14,13 @@
     background: linear-gradient(to right, #C0392B, #F6D365);
 }
 
-.banner-one .product{
-
+.banner-one .product, .text-button{
     width: 40vw;
+}
+
+.banner-one .person{
+    align-self: flex-end;
+    height: 35vh;
 }
 
 .banner-one .text-button{

@@ -1,37 +1,40 @@
 body {
   font-family: Arial, sans-serif;
-  background: #fff;
+  background: #F4DCC6;
 }
 
 .carousel-container {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
   max-width: 1200px;
-  margin-top: 20px;
   width: 90%;
+  margin: 0 auto;
 }
 
 .carousel {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   overflow-x: auto;
   scroll-behavior: smooth;
-  gap: 20px;
+  
   list-style: none;
   margin: 20px;
   padding: 10px 0;
+  width: 100%;
+}
+
+#categories {
+    gap: 20px;
 }
 
 .carousel::-webkit-scrollbar {
   display: none;
 }
 
-.item img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 5px;
-}
 
 .carousel-button {
   background-color:unset;
@@ -51,6 +54,10 @@ body {
 }
 
 .item-link {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   text-decoration: none;
   color: inherit;
 }

@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking Google fonts for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"/>
     <title>India at Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carousel.css">
-     <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="products.css">
     <title>Document</title>
 </head>
 <body>
@@ -18,9 +21,7 @@
 
         <ul class="nav-left">
             <li>
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
-                </svg>
+                <button class="search material-symbols-rounded"> search </button>
             </li>
         </ul>
 
@@ -34,15 +35,11 @@
 
         <ul class="nav-right">
             <li>
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                </svg>
+                <button class="person material-symbols-rounded"> person </button>
             </li>
 
             <li> 
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2 .917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8h12Z"/>
-                </svg>  
+                <button class="shopping-cart material-symbols-rounded"> shopping_bag </button>
             </li>
         </ul>
     </nav>
@@ -69,84 +66,84 @@
             <button class="carousel-button categories-nav left">&lt;</button>
             
             <ul class="carousel" id="categories">
-                <li class="item">
+                <li class="item categories-item">
                     <a href="/collections/groceries" class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/01-Category-icons-Groceries_180x.png?v=1655481741" alt="Groceries" class="item-image">
                     <h2 class="item-title">Groceries</h2>
                     </a>
                 </li>
 
-                <li class="item">
+                <li class="item categories-item">
                     <a href="/collections/herbs-spices" class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/02-Category-icons-Herbs-_-Spices_180x.png?v=1655481762" alt="Herbs and Spices" class="item-image">
                     <h2 class="item-title">Herbs & Spices</h2>
                     </a>
                 </li>
 
-                <li class="item">
+                <li class="item categories-item">
                     <a href="/collections/oil-ghee" class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/03-Category-icons-Oil-_-Ghee_180x.png?v=1655481779" alt="Oil and Ghee" class="item-image">
                     <h2 class="item-title">Oil & Ghee</h2>
                     </a>
                 </li>
 
-                <li class="item">
+                <li class="item categories-item">
                     <a href="/collections/daily-use-pooja-products" class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/04-Category-icons-Prayer-Items_180x.png?v=1655481797" alt="Prayer Items" class="item-image">
                     <h2 class="item-title">Prayer Items</h2>
                     </a>
                 </li>
 
-                <li class="item">
+                <li class="item categories-item">
                     <a href="/collections/pickles-paste-chutney-sauces" class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/05-Category-icons-Pickles-_-Pastes_180x.png?v=1655481820" alt="Pickles and Pastes" class="item-image">
                     <h2 class="item-title">Pickles & Pastes</h2>
                     </a>
                 </li>
 
-                <li class="item">
+                <li class="item categories-item">
                     <a href="/collections/rice-flour" class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/06-Category-icons-Rice-_-Flours_180x.png?v=1655481855" alt="Rice and Flours" class="item-image">
                     <h2 class="item-title">Rice & Flours</h2>
                     </a>
                 </li>
 
-                <li class="item">
+                <li class="item categories-item">
                     <a href="/collections/biscuits" class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/07-Category-icons-Biscuits_180x.png?v=1655481876" alt="Biscuits" class="item-image">
                     <h2 class="item-title">Biscuits</h2>
                     </a>
                 </li>
 
-                <li class="item">
+                <li class="item categories-item">
                     <a href="/collections/candies-and-lollies" class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/08-Category-icons-Candies_180x.png?v=1655481895" alt="Candies" class="item-image">
                     <h2 class="item-title">Candies</h2>
                     </a>
                 </li>
 
-                <li class="item">
+                <li class="item categories-item">
                     <a href="/collections/tsf-dried-nuts" class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/09-Category-icons-Snacks_180x.png?v=1655482040" alt="Snacks" class="item-image">
                     <h2 class="item-title">Snacks</h2>
                     </a>
                 </li>
 
-                <li class="item">
+                <li class="item categories-item">
                     <a href="/collections/sweets" class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/10-Category-icons-Sweets-_-Desserts_180x.png?v=1655482073" alt="Sweets and Desserts" class="item-image">
                     <h2 class="item-title">Sweets & Desserts</h2>
                     </a>
                 </li>
 
-                <li class="item">
+                <li class="item categories-item">
                     <a href="/collections/utensils" class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/11-Category-icons-Utensils_180x.png?v=1655481946" alt="Utensils" class="item-image">
                     <h2 class="item-title">Utensils</h2>
                     </a>
                 </li>
 
-                <li class="item">
+                <li class="item categories-item">
                     <a href="/collections/sports-and-games" class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/imgv2-hdemo-1_180x.png?v=1628154721" alt="Sports and Games" class="item-image">
                     <h2 class="item-title">Sports & Games</h2>
@@ -157,7 +154,97 @@
             <button class="carousel-button categories-nav right">&gt;</button>
         </div>
 
-        
+        <div class="hotdeals">
+            <img src="images/hotdeals.png" alt="hot deals" class="hotdeals-image">
+            <div class="products-container carousel-container">
+                <button class="carousel-button products-nav left">&lt;</button>
+                <ul class="carousel" id="products">
+                    <li class="item product-item">
+                        <div class="image-box">
+                            <img src="images/product-images/product1.png" alt="Product 1" class="product-image p1">
+                            <button class="product-cart material-symbols-rounded"> shopping_bag </button> 
+                        </div>
+                        <h3 class="product-title">Maggi Masala Noodles 560Gm</h3>
+                        <p class="product-price">
+                            $<span class="dollars">4</span><span class="cents">.50</span>
+                        </p>
+
+                    </li>
+                    <li class="item product-item">
+                        <div class="image-box">
+                            <img src="images/product-images/product2.png" alt="Product 2" class="product-image p2">
+                            <button class="product-cart material-symbols-rounded"> shopping_bag </button> 
+                        </div>
+                        <h3 class="product-title">Amul Ghee 1Ltr</h3>
+                        <p class="product-price">
+                            $<span class="dollars">19</span><span class="cents">.95</span>
+                        </p>                    
+                    </li>
+                    <li class="item product-item">
+                        <div class="image-box">
+                            <img src="images/product-images/product3.png" alt="Product 3" class="product-image p3">
+                            <button class="product-cart material-symbols-rounded"> shopping_bag </button> 
+                        </div>
+                        <h3 class="product-title">Parle Hide & Seek 200gm</h3>
+                        <p class="product-price">
+                            $<span class="dollars">3</span><span class="cents">.70</span>
+                        </p>                    
+                    </li>
+                    <li class="item product-item">
+                        <div class="image-box">
+                            <img src="images/product-images/product4.png" alt="Product 4" class="product-image p4">
+                            <button class="product-cart material-symbols-rounded"> shopping_bag </button> 
+                        </div>
+                        <h3 class="product-title">Girnar Tbag Cardamom 100Bags</h3>
+                        <p class="product-price">
+                            $<span class="dollars">9</span><span class="cents">.95</span>
+                        </p>
+                    </li>
+                    <li class="item product-item">
+                        <div class="image-box">
+                            <img src="images/product-images/product1.png" alt="Product 1" class="product-image p1">
+                            <button class="product-cart material-symbols-rounded"> shopping_bag </button> 
+                        </div>
+                        <h3 class="product-title">Maggi Masala Noodles 560Gm</h3>
+                        <p class="product-price">
+                            $<span class="dollars">4</span><span class="cents">.50</span>
+                        </p>
+
+                    </li>
+                    <li class="item product-item">
+                        <div class="image-box">
+                            <img src="images/product-images/product2.png" alt="Product 2" class="product-image p2">
+                            <button class="product-cart material-symbols-rounded"> shopping_bag </button> 
+                        </div>
+                        <h3 class="product-title">Amul Ghee 1Ltr</h3>
+                        <p class="product-price">
+                            $<span class="dollars">19</span><span class="cents">.95</span>
+                        </p>                    
+                    </li>
+                    <li class="item product-item">
+                        <div class="image-box">
+                            <img src="images/product-images/product3.png" alt="Product 3" class="product-image p3">
+                            <button class="product-cart material-symbols-rounded"> shopping_bag </button> 
+                        </div>
+                        <h3 class="product-title">Parle Hide & Seek 200gm</h3>
+                        <p class="product-price">
+                            $<span class="dollars">3</span><span class="cents">.70</span>
+                        </p>                    
+                    </li>
+                    <li class="item product-item">
+                        <div class="image-box">
+                            <img src="images/product-images/product4.png" alt="Product 4" class="product-image p4">
+                            <button class="product-cart material-symbols-rounded"> shopping_bag </button> 
+                        </div>
+                        <h3 class="product-title">Girnar Tbag Cardamom 100Bags</h3>
+                        <p class="product-price">
+                            $<span class="dollars">9</span><span class="cents">.95</span>
+                        </p>
+                    </li>
+                </ul>
+                <button class="carousel-button products-nav right">&gt;</button>
+            </div>
+        </div>
 
 
 

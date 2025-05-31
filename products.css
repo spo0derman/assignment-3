@@ -1,0 +1,88 @@
+
+.hotdeals-image {
+    width: 100vw;
+    height: auto;
+}
+.products-container{
+    width: 100%;
+}
+
+.product-item {
+    margin: 0; /* Add spacing between items */
+    /* min-width: 20%; fits 4 items in 100% container */
+    width: 255px;
+    flex: 0 0 255px;
+    box-sizing: border-box;
+}
+
+.image-box {
+    position: relative;
+    background-color: #FFF8F1;
+    width: 255px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.product-image {
+    
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    transform: translateY(20px);
+}
+
+#products {
+    gap: 20px;
+}
+
+.p2 {
+    height: 70%;
+    width: auto;
+}
+
+.p4 {
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #3E302B;
+    margin: 10px 0;
+    text-align: center;
+}
+.product-cart {
+    border-radius: 50%;
+    border: none;
+    font-size: 2rem;
+    background-color: #E57300;
+    color: #FFF8F1;
+    padding: 8px;
+    position: absolute;      /* floats it */
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-box:hover .product-cart {
+  opacity: 1;
+}
+
+.product-price {
+  font-size: 1.2rem;  /* base size for dollars */
+  color: #C0392B;
+  font-weight: bold;
+}
+
+.product-price .cents {
+  font-size: 0.8rem;  /* smaller size for cents */
+  vertical-align: super;  /* lifts cents up */
+}
