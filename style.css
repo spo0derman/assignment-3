@@ -21,16 +21,6 @@ body {
     flex-direction: column;
 }
 
-.center-line {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      width: 2px; /* thickness of the line */
-      background-color: black; /* color of the line */
-      transform: translateX(-50%);
-}
-
 /* Navigation */
 nav {
     position: relative;
@@ -60,7 +50,7 @@ nav ul li {
 nav ul li a {
     color: #3E302B;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: bold;
 }
 
@@ -93,6 +83,8 @@ nav img {
 nav .nav-center {
   height: max-content;
 }
+
+
 /* Main Content */
 main {
     margin: 0;
@@ -120,6 +112,15 @@ img {
     border: none;
     background: none;
 }
+
+.banner-image {
+    width: 100vw;
+    height: auto;
+}
+.groceries-banner {
+    width: 90vw;
+    height: auto;
+}
 .product-image {
     width: 100%;
     height: auto;
@@ -127,7 +128,6 @@ img {
     max-height: 90%; 
     margin: 20px 0; 
 }
-
 
 
 /* Footer */

@@ -1,9 +1,7 @@
 
-.hotdeals-image {
-    width: 100vw;
-    height: auto;
-}
+
 .products-container{
+    margin: 20px auto;
     width: 100%;
 }
 
@@ -37,7 +35,7 @@
     transform: translateY(20px);
 }
 
-#products {
+.products {
     gap: 20px;
 }
 

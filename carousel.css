@@ -27,7 +27,7 @@ body {
   width: 100%;
 }
 
-#categories {
+.categories {
     gap: 20px;
 }
 

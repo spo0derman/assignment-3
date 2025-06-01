@@ -1,65 +1,52 @@
-// This script handles the functionality of the categories carousel
-document.querySelector('.categories-nav.left').addEventListener('click', () => {
-  document.getElementById('categories').scrollBy({ left: -300, behavior: 'smooth' });
-});
+function setupCarousel({
+  carouselSelector,
+  itemSelector,
+  leftNavSelector,
+  rightNavSelector,
+  defaultScrollAmount = 300
+}) {
+  const carousel = document.querySelector(carouselSelector);
+  const leftButton = document.querySelector(leftNavSelector);
+  const rightButton = document.querySelector(rightNavSelector);
 
-document.querySelector('.categories-nav.right').addEventListener('click', () => {
-  document.getElementById('categories').scrollBy({ left: 300, behavior: 'smooth' });
-});
+  if (!carousel || !leftButton || !rightButton) return;
 
+  // Function to get the width of one card (including margin)
+  function getItemWidth() {
+    const item = carousel.querySelector(itemSelector);
+    if (!item) return defaultScrollAmount;
+    const style = window.getComputedStyle(item);
+    const margin = parseInt(style.marginRight) + parseInt(style.marginLeft);
+    return item.offsetWidth + margin;
+  }
 
-const cat_carousel = document.getElementById('categories');
-const cat_leftButton = document.querySelector('.categories-nav.left');
-const cat_rightButton = document.querySelector('.categories-nav.right');
+  // Event listeners for scrolling
+  leftButton.addEventListener('click', () => {
+    const scrollAmount = getItemWidth();
+    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
 
-// Get the width of one card (including margin)
-function getItemWidth() {
-  const cat_item = cat_carousel.querySelector('.categories-item');
-  const cat_style = window.getComputedStyle(cat_item);
-  const cat_margin = parseInt(cat_style.marginRight) + parseInt(cat_style.marginLeft);
-  return cat_item.offsetWidth + cat_margin;
+  rightButton.addEventListener('click', () => {
+    const scrollAmount = getItemWidth();
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
 }
 
-cat_leftButton.addEventListener('click', () => {
-  const cat_scrollAmount = getItemWidth();
-  cat_carousel.scrollBy({ left: -cat_scrollAmount, behavior: 'smooth' });
+
+
+// Initialize the categories carousel
+setupCarousel({
+  carouselSelector: '.categories',
+  itemSelector: '.categories-item',
+  leftNavSelector: '.categories-nav.left',
+  rightNavSelector: '.categories-nav.right'
 });
 
-cat_rightButton.addEventListener('click', () => {
-  const cat_scrollAmount = getItemWidth();
-  cat_carousel.scrollBy({ left: cat_scrollAmount, behavior: 'smooth' });
-});
-
-
-// This script handles the functionality of the products carousel
-document.querySelector('.products-nav.left').addEventListener('click', () => {
-  document.getElementById('products').scrollBy({ left: -300, behavior: 'smooth' });
-});
-
-document.querySelector('.products-nav.right').addEventListener('click', () => {
-  document.getElementById('products').scrollBy({ left: 300, behavior: 'smooth' });
-});
-
-
-const prod_carousel = document.getElementById('products');
-const prod_leftButton = document.querySelector('.products-nav.left');
-const prod_rightButton = document.querySelector('.products-nav.right');
-
-// Get the width of one card (including margin)
-function getItemWidth() {
-  const prod_item = prod_carousel.querySelector('.products-item');
-  const prod_style = window.getComputedStyle(item);
-  const prod_margin = parseInt(prod_style.marginRight) + parseInt(style.marginLeft);
-  return prod_item.offsetWidth + prod_margin;
-}
-
-leftButton.addEventListener('click', () => {
-  const prod_scrollAmount = getItemWidth();
-  prod_carousel.scrollBy({ left: -prod_scrollAmount, behavior: 'smooth' });
-});
-
-rightButton.addEventListener('click', () => {
-  const prod_scrollAmount = getItemWidth();
-  prod_carousel.scrollBy({ left: prod_scrollAmount, behavior: 'smooth' });
+// Initialize the products carousel
+setupCarousel({
+  carouselSelector: '.products',
+  itemSelector: '.products-item',
+  leftNavSelector: '.products-nav.left',
+  rightNavSelector: '.products-nav.right'
 });
 

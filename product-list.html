@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking Google fonts for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"/>
+    <title>India at Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="product-list.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="center-line"></div> -->
+    <section id="delivery">
+        <p>FREE DELIVERY IN MELBOURNE ON ORDERS WORTH $99+</p>
+    </section>
+     <nav>
+        <ul class="nav-left">
+            <li>
+                <button class="search material-symbols-rounded"> search </button>
+            </li>
+        </ul>
+
+        <ul class="nav-center">            
+            <li><a href="#home">All Categories</a></li>
+            <li><a href="#products">About Us</a></li>
+            <li><img src="logo.avif" alt="logo image" class="logo" href="index.html"></li>
+            <li><a href="#about">Contact Us</a></li>
+            <li><a href="#contact">Blog</a></li>        
+        </ul>
+
+        <ul class="nav-right">
+            <li>
+                <button class="person material-symbols-rounded"> person </button>
+            </li>
+
+            <li> 
+                <button class="shopping-cart material-symbols-rounded"> shopping_bag </button>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+    <div class="breadcrumbs">
+        <a class="bc-item bc-normal" href="index.html">Home</a> 
+        <span class="separator">></span>
+        <a class="bc-item bc-current" href="#products">Groceries</a>
+    </div>
+
+    <h1>Groceries</h1>
+    <img src="images/Groceries-banner.png" alt="Groceries" class="banner-image groceries-banner">
+
+    <div class="toolbar">
+        <ul class="toolbar-left">
+            <li>
+                <button class="view-icon view-current layout-button" data-layout="layout-3x4">
+                    <img src="images/view-icons/3x4-current.png" alt="3x4 current">    
+                </button>
+            </li>
+
+            <li>
+                <button class="view-icon view-normal layout-button" data-layout="layout-3x3">
+                    <img src="images/view-icons/3x3-normal.png" alt="3x3 normal">    
+                </button>
+            </li>
+
+            <li>
+                <button class="view-icon view-normal layout-button" data-layout="layout-2x2">
+                    <img src="images/view-icons/2x2-normal.png" alt="2x2 normal">    
+                </button>
+            </li>
+
+            <li>
+                <button class="view-icon view-normal layout-button" data-layout="layout-list">
+                    <img src="images/view-icons/list-normal.png" alt="list normal">    
+                </button>
+            </li>
+        </ul>
+
+        <div class="toolbar-center">            
+            <div class="sort-dropdown">
+                <label for="sort-options">Sort by</label>
+                <select id="sort-options" name="sort-options">
+                    <option value="name-asc">Name, A-Z</option>
+                    <option value="name-desc">Name, Z-A</option>
+                    <option value="featured">Featured</option>
+                    <option value="price-asc">Price, Low To High</option>
+                    <option value="price-desc">Price, High To Low</option>
+                    <option value="date-old">Date, Old To New</option>
+                    <option value="date-new">Date, New To Old</option>
+                    <option value="best-selling" selected>Best Selling</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="toolbar-right">
+            <p>Showing 1 - 4 of 804 items</p>
+        </div>
+    </div>
+
+    <div class="products-container carousel-container">
+        <ul class="carousel products layout-3x4">
+            <li class="item product-item">
+                <div class="image-box">
+                <img src="images/product-images/product1.png" alt="Product 1" class="product-image p1" />
+                <button class="product-cart material-symbols-rounded"> shopping_bag </button>
+                </div>
+                <div class="product-details">
+                <h3 class="product-title">Maggi Masala Noodles 560Gm</h3>
+                <p class="product-description">Classic instant noodles bursting with bold Indian spices for a quick, flavorful meal.</p>
+                <p class="product-price">
+                    $<span class="dollars">4</span><span class="cents">.50</span>
+                </p>
+                <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="item product-item">
+                <div class="image-box">
+                <img src="images/product-images/product2.png" alt="Product 2" class="product-image p2" />
+                <button class="product-cart material-symbols-rounded"> shopping_bag </button>
+                </div>
+                <div class="product-details">
+                <h3 class="product-title">Amul Ghee 1Ltr</h3>
+                <p class="product-description">Rich, creamy ghee made from pure cow’s milk for authentic flavor and nutrition.</p>
+                <p class="product-price">
+                    $<span class="dollars">19</span><span class="cents">.95</span>
+                </p>
+                <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="item product-item">
+                <div class="image-box">
+                <img src="images/product-images/product3.png" alt="Product 3" class="product-image p3" />
+                <button class="product-cart material-symbols-rounded"> shopping_bag </button>
+                </div>
+                <div class="product-details">
+                <h3 class="product-title">Parle Hide & Seek 200gm</h3>
+                <p class="product-description">Crunchy, chocolatey biscuits to satisfy your sweet cravings any time of day.</p>
+                <p class="product-price">
+                    $<span class="dollars">3</span><span class="cents">.70</span>
+                </p>
+                <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="item product-item">
+                <div class="image-box">
+                <img src="images/product-images/product4.png" alt="Product 4" class="product-image p4" />
+                <button class="product-cart material-symbols-rounded"> shopping_bag </button>
+                </div>
+                <div class="product-details">
+                <h3 class="product-title">Girnar Tbag Cardamom 100Bags</h3>
+                <p class="product-description">Premium cardamom tea bags for a refreshing and aromatic experience in every sip.</p>
+                <p class="product-price">
+                    $<span class="dollars">9</span><span class="cents">.95</span>
+                </p>
+                <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </li>
+
+            <!-- Repeat the same structure for the next 8 products -->
+            <li class="item product-item">
+                <div class="image-box">
+                <img src="images/product-images/product1.png" alt="Product 1" class="product-image p1" />
+                <button class="product-cart material-symbols-rounded"> shopping_bag </button>
+                </div>
+                <div class="product-details">
+                <h3 class="product-title">Maggi Masala Noodles 560Gm</h3>
+                <p class="product-description">Classic instant noodles bursting with bold Indian spices for a quick, flavorful meal.</p>
+                <p class="product-price">
+                    $<span class="dollars">4</span><span class="cents">.50</span>
+                </p>
+                <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="item product-item">
+                <div class="image-box">
+                <img src="images/product-images/product2.png" alt="Product 2" class="product-image p2" />
+                <button class="product-cart material-symbols-rounded"> shopping_bag </button>
+                </div>
+                <div class="product-details">
+                <h3 class="product-title">Amul Ghee 1Ltr</h3>
+                <p class="product-description">Rich, creamy ghee made from pure cow’s milk for authentic flavor and nutrition.</p>
+                <p class="product-price">
+                    $<span class="dollars">19</span><span class="cents">.95</span>
+                </p>
+                <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="item product-item">
+                <div class="image-box">
+                <img src="images/product-images/product3.png" alt="Product 3" class="product-image p3" />
+                <button class="product-cart material-symbols-rounded"> shopping_bag </button>
+                </div>
+                <div class="product-details">
+                <h3 class="product-title">Parle Hide & Seek 200gm</h3>
+                <p class="product-description">Crunchy, chocolatey biscuits to satisfy your sweet cravings any time of day.</p>
+                <p class="product-price">
+                    $<span class="dollars">3</span><span class="cents">.70</span>
+                </p>
+                <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="item product-item">
+                <div class="image-box">
+                <img src="images/product-images/product4.png" alt="Product 4" class="product-image p4" />
+                <button class="product-cart material-symbols-rounded"> shopping_bag </button>
+                </div>
+                <div class="product-details">
+                <h3 class="product-title">Girnar Tbag Cardamom 100Bags</h3>
+                <p class="product-description">Premium cardamom tea bags for a refreshing and aromatic experience in every sip.</p>
+                <p class="product-price">
+                    $<span class="dollars">9</span><span class="cents">.95</span>
+                </p>
+                <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+    <script src="product-list.js"></script>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 India at Home. All rights reserved.</p>
+    </footer></section>
+</body>
+
+
+</html>
+
+
+
+
+
