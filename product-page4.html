@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking Google fonts for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"/>
+    <title>India at Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="product-list.css">
+    <link rel="stylesheet" href="product-page.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="center-line"></div> -->
+    <section id="delivery">
+        <p>FREE DELIVERY IN MELBOURNE ON ORDERS WORTH $99+</p>
+    </section>
+     <nav>
+        <ul class="nav-left">
+            <li>
+                <button class="search material-symbols-rounded"> search </button>
+            </li>
+        </ul>
+
+        <ul class="nav-center">            
+            <li><a href="#home">All Categories</a></li>
+            <li><a href="#products">About Us</a></li>
+            <li>
+                <a href="index.html">
+                    <img src="logo.avif" alt="logo image" class="logo">
+                </a>
+            </li>
+            <li><a href="#about">Contact Us</a></li>
+            <li><a href="#contact">Blog</a></li>        
+        </ul>
+
+        <ul class="nav-right">
+            <li>
+                <button class="person material-symbols-rounded"> person </button>
+            </li>
+
+            <li> 
+                <button class="shopping-cart material-symbols-rounded"> shopping_bag </button>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="breadcrumbs">
+            <a class="bc-item bc-normal" href="index.html">Home</a> 
+            <span class="separator">></span>
+            <a class="bc-item bc-normal" href="#products">Groceries</a>
+            <span class="separator">></span>
+            <a class="bc-item bc-current" href="#products">Girnar Tbag Cardamom 100Bags</a>
+        </div>
+        <div class="product-detail">
+            <div class="image-section">
+                <div class="product-detail__image-box">
+                    <img src="images/product-images/product4.png" alt="Product 4" class="product-detail__image4" />
+                </div>
+                <div class="thumbnail-container">
+                    <button class="carousel-button p1thumbnail-nav left">&lt;</button>
+                    <div class="thumbnail">
+                        <div class="img-wrapper tbn-selected">
+                            <img src="images/product-images/product4.png" alt="Product 4" class="thumbnail__image" />
+                        </div>
+
+                        <div class="img-wrapper tbn-unselected">
+                            <img src="images/product-images/product4.png" alt="Product 4" class="thumbnail__image" />
+                        </div>
+
+                        <div class="img-wrapper tbn-unselected">
+                            <img src="images/product-images/product4.png" alt="Product 4" class="thumbnail__image" />
+                        </div>
+
+                        <div class="img-wrapper tbn-unselected">
+                            <img src="images/product-images/product4.png" alt="Product 4" class="thumbnail__image" />
+                        </div>
+
+                        
+                    </div>
+                <button class="carousel-button p1thumbnail-nav right">&gt;</button>
+                </div>
+                
+            </div>
+
+            <div class="product-detail__info">
+                <h1 class="product-detail__title">Girnar Tbag Cardamom 100Bags</h1>
+                <p class="product-detail__description">
+                Premium cardamom tea bags for a fresh and aromatic brew, perfect for relaxing moments.
+                </p>
+                <p class="product-detail__availability">Availability: <span class="in-stock">In Stock</span></p>
+                <p class="product-detail__price">
+                $<span class="dollars">9</span><span class="cents">.95</span>
+                </p>
+
+                <div class="product-detail__buy-options">
+                    <div class="option opt1 opt-selected">
+                        <input type="radio" name="buy-option" checked /> Buy 1 for $9.95
+                    </div>
+                    <div class="option-container">
+                        <div class="option opt2 opt-normal">
+                            <div class="option-left">
+                                <div class="option__radio">
+                                    <input type="radio" name="buy-option" /> Buy 2 with 10% off
+                                </div>    
+                                
+                                <div class="option__details">
+                                    <p>Per item: </p>
+                                    <p>Total price: </p>
+                                    
+                                </div>
+                            </div>
+                            <div class="option-right">
+                                <p style="text-decoration: line-through;">$9.95</p>
+                                <p>$8.95</p>
+                                <p>$17.90</p>
+                            </div>
+                        </div>
+                        <p class="save">Save: $2.00</p>
+                    </div>
+                    
+                </div>
+
+                <div class="quantity-cart-container">
+                    <div class="quantity-controls">
+                        <button class="qty-btn">−</button>
+                        <span class="qty-number">1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            
+        </div>
+
+    <!-- Linking custom script -->
+    <!-- <script src="script.js"></script> -->
+    <script src="product-page.js"></script>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 India at Home. All rights reserved.</p>
+    </footer></section>
+</body>
+
+
+</html>
