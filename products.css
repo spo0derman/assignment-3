@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+.product-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .image-box {
     position: relative;
     background-color: #FFF8F1;

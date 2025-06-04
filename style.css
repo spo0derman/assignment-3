@@ -21,6 +21,8 @@ body {
 
 /* Navigation */
 nav {
+  position: fixed;
+  z-index: 999; /* Ensure nav is on top */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,6 +30,7 @@ nav {
   width: 100%;
   height: 12vh;
   background: #FFF8F1;
+  transition: top 0.3s ease;
 }
 
 .nav-left,
@@ -70,11 +73,128 @@ nav img.logo {
 }
 
 
+/* Make the search overlay cover the whole viewport with some transparency */
+/* Basic overlay covering the whole screen */
+.search-overlay {
+  position: fixed;
+  top: 12vh;
+  width: 100%;
+  height: 30%;
+  background-color: #FFF8F1; /* Light white overlay */
+  z-index: 1000; /* On top of everything */
+  justify-content: flex-start;
+  align-items: flex-start; /* Top-aligned content */
+  flex-direction: column;
+}
+
+.search-overlay,
+.dark-overlay {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.search-overlay.hidden,
+.dark-overlay.hidden {
+  opacity: 0;
+  pointer-events: none; /* also disable interaction when hidden */
+}
+
+
+.dark-overlay {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Search bar itself */
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 30px auto 10px auto; /* Centered with some top margin */
+  background: #FBE8D3;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Search input */
+ .search-bar input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+/* Close button */
+.search-overlay .close-search {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+/* Example search results list */
+.search-overlay .search-results {
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-overlay .search-results .search-list {
+  list-style: none;
+  padding: 0;
+  margin-left: 25px;
+}
+
+.search-overlay .search-results .suggestions-title {
+  font-weight: bold;
+  font-size: larger;
+  
+  margin-bottom: 0.5rem;
+  color: #3E302B;
+}
+
+.search-overlay .search-results li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.search-overlay .search-results li a {
+  color: inherit; /* Inherit color from li */
+  text-decoration: underline; 
+}
+
+.search-overlay .search-results li:hover {
+  text-decoration: underline;
+}
+
+/* Smooth fade-in/out if desired */
+.search-overlay.show {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
 
 
 /* Main Content */
 main {
-    margin: 0;
+    margin-top: 12vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,6 +207,7 @@ img {
 }
 
 #delivery {
+    z-index: 1000;
     background: #C0392B;
     color: #fff;
     width: 100%;
