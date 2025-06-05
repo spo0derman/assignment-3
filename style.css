@@ -5,6 +5,8 @@
 }
 
 html {
+  height: 100%;
+  margin: 0;
     max-width: 100vw;
     max-height: 100vh;
 }
@@ -17,8 +19,12 @@ body {
   background: #F4DCC6;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
+main {
+  flex: 1; /* Allow main to grow and fill the space */
+}
 /* Navigation */
 nav {
   position: fixed;
@@ -72,6 +78,10 @@ nav img.logo {
   height: 100px;
 }
 
+nav button {
+  cursor: pointer;
+}
+
 
 /* Make the search overlay cover the whole viewport with some transparency */
 /* Basic overlay covering the whole screen */
@@ -93,8 +103,7 @@ nav img.logo {
   transition: opacity 0.3s ease;
 }
 
-.search-overlay.hidden,
-.dark-overlay.hidden {
+.hidden {
   opacity: 0;
   pointer-events: none; /* also disable interaction when hidden */
 }
@@ -235,6 +244,10 @@ img {
     max-width: 90%; 
     max-height: 90%; 
     margin: 20px 0; 
+}
+
+.shop-now {
+  cursor: pointer;
 }
 
 

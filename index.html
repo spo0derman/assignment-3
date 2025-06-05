@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="banner.css">
     <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="cart.css">
     <title>Document</title>
+
+
 </head>
 <body>
     <!-- <div class="center-line"></div> -->
@@ -18,10 +21,6 @@
         <p>FREE DELIVERY IN MELBOURNE ON ORDERS WORTH $99+</p>
     </section>
     
-
-    
-
-
      <nav>
         <ul class="nav-left">
             <li>
@@ -61,10 +60,10 @@
         <div class="search-results">
             <ul class="search-list">
                 <p class="suggestions-title">Suggestions</p>
-                <li><a href="product-page1.html">noodles</a></li>
-                <li><a href="product-page2.html">ghee</a></li>
-                <li><a href="product-page3.html">biscuits</a></li>
-                <li><a href="product-page4.html">tea bags</a></li>
+                <li><a href="search-product1.html">noodles</a></li>
+                <li><a href="search-product2.html">ghee</a></li>
+                <li><a href="search-product3.html">biscuits</a></li>
+                <li><a href="search-product4.html">tea bags</a></li>
             </ul>
         </div>
     </div>
@@ -76,16 +75,15 @@
         <div class="banner">
             <ul class="banner">
                 <li class="banner-item banner-one">
-                    <button class="carousel-button banner-nav left">&lt;</button>
+                    
                     <div class="text-button">
                         <img src="images/b1-1text.png" alt="get snacks" class="text">
-                        <button class="shop-now">Shop Now</button>
+                        <button class="shop-now" onclick="location.href='product-list.html'">Shop Now</button>
                     </div>
                     
                     <img src="images/b1-1pers.png" alt="woman" class="person">
                     <img src="images/b1-1prod.png" alt="products" class="product">
                     
-                    <button class="carousel-button banner-nav right">&gt;</button>
                 </li>
             </ul>
         </div>
@@ -102,80 +100,80 @@
                 </li>
 
                 <li class="item categories-item">
-                    <a href="/collections/herbs-spices" class="item-link">
+                    <span class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/02-Category-icons-Herbs-_-Spices_180x.png?v=1655481762" alt="Herbs and Spices" class="item-image">
                     <h2 class="item-title">Herbs & Spices</h2>
-                    </a>
+                    </span>
                 </li>
 
                 <li class="item categories-item">
-                    <a href="/collections/oil-ghee" class="item-link">
+                    <span class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/03-Category-icons-Oil-_-Ghee_180x.png?v=1655481779" alt="Oil and Ghee" class="item-image">
                     <h2 class="item-title">Oil & Ghee</h2>
-                    </a>
+                    </span>
                 </li>
 
                 <li class="item categories-item">
-                    <a href="/collections/daily-use-pooja-products" class="item-link">
+                    <span class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/04-Category-icons-Prayer-Items_180x.png?v=1655481797" alt="Prayer Items" class="item-image">
                     <h2 class="item-title">Prayer Items</h2>
-                    </a>
+                    </span>
                 </li>
 
                 <li class="item categories-item">
-                    <a href="/collections/pickles-paste-chutney-sauces" class="item-link">
+                    <span class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/05-Category-icons-Pickles-_-Pastes_180x.png?v=1655481820" alt="Pickles and Pastes" class="item-image">
                     <h2 class="item-title">Pickles & Pastes</h2>
-                    </a>
+                    </span>
                 </li>
 
                 <li class="item categories-item">
-                    <a href="/collections/rice-flour" class="item-link">
+                    <span class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/06-Category-icons-Rice-_-Flours_180x.png?v=1655481855" alt="Rice and Flours" class="item-image">
                     <h2 class="item-title">Rice & Flours</h2>
-                    </a>
+                    </span>
                 </li>
 
                 <li class="item categories-item">
-                    <a href="/collections/biscuits" class="item-link">
+                    <span class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/07-Category-icons-Biscuits_180x.png?v=1655481876" alt="Biscuits" class="item-image">
                     <h2 class="item-title">Biscuits</h2>
-                    </a>
+                    </span>
                 </li>
 
                 <li class="item categories-item">
-                    <a href="/collections/candies-and-lollies" class="item-link">
+                    <span class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/08-Category-icons-Candies_180x.png?v=1655481895" alt="Candies" class="item-image">
                     <h2 class="item-title">Candies</h2>
-                    </a>
+                    </span>
                 </li>
 
                 <li class="item categories-item">
-                    <a href="/collections/tsf-dried-nuts" class="item-link">
+                    <span class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/09-Category-icons-Snacks_180x.png?v=1655482040" alt="Snacks" class="item-image">
                     <h2 class="item-title">Snacks</h2>
-                    </a>
+                    </span>
                 </li>
 
                 <li class="item categories-item">
-                    <a href="/collections/sweets" class="item-link">
+                    <span class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/10-Category-icons-Sweets-_-Desserts_180x.png?v=1655482073" alt="Sweets and Desserts" class="item-image">
                     <h2 class="item-title">Sweets & Desserts</h2>
-                    </a>
+                    </span>
                 </li>
 
                 <li class="item categories-item">
-                    <a href="/collections/utensils" class="item-link">
+                    <span class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/11-Category-icons-Utensils_180x.png?v=1655481946" alt="Utensils" class="item-image">
                     <h2 class="item-title">Utensils</h2>
-                    </a>
+                    </span>
                 </li>
 
                 <li class="item categories-item">
-                    <a href="/collections/sports-and-games" class="item-link">
+                    <span class="item-link">
                     <img src="https://www.indiaathome.com.au/cdn/shop/files/imgv2-hdemo-1_180x.png?v=1628154721" alt="Sports and Games" class="item-image">
                     <h2 class="item-title">Sports & Games</h2>
-                    </a>
+                    </span>
                 </li>
             </ul>
 
@@ -296,8 +294,142 @@
             </div>
         </div>
 
+        <!-- Cart Overlay -->
+        <div class="cart-overlay hidden" id="cart-overlay">
+        <div class="cart-content">
+            
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <button id="close-cart-btn" class="close-btn">&times;</button>
+            </div>
+            
+            <div class="cart-main">
+                
+
+                <ul class="cart-items">
+                    <!-- <li class="cart-item">
+                        <div class="img-wrapper">
+                            <img src="images/product-images/product1.png" alt="Product 1" />
+                        </div>
+                        
+                        <div class="item-details">
+                            <div class="item-top">
+                                <h4>Maggi Masala Noodles 560Gm</h4>
+                                <button class="remove-btn">&times;</button>
+                            </div>
+                            
+                            <div class="price_and_quantity">
+                                <div class="quantity-controls">
+                                    <button class="decrease">-</button>
+                                    <span class="quantity">1</span>
+                                    <button class="increase">+</button>
+                                </div>
+                                <p class="product-price">
+                                    $<span class="dollars">19</span><span class="cents">.95</span>
+                                </p>
+                            </div>
+                       
+                        </div>
+                        
+                    </li>
+                    <div class="seperator"></div>
+                    <li class="cart-item">
+                        <div class="img-wrapper">
+                            <img src="images/product-images/product2.png" alt="Product 2" />
+                        </div>
+                        
+                        <div class="item-details">
+                            <div class="item-top">
+                                <h4>Amul Ghee 1Ltr</h4>
+                                <button class="remove-btn">&times;</button>
+                            </div>
+                            
+                            <div class="price_and_quantity">
+                                <div class="quantity-controls">
+                                    <button class="decrease">-</button>
+                                    <span class="quantity">1</span>
+                                    <button class="increase">+</button>
+                                </div>
+                                <p class="product-price">
+                                    $<span class="dollars">19</span><span class="cents">.95</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="seperator"></div>
+                    <li class="cart-item">
+                        <div class="img-wrapper">
+                            <img src="images/product-images/product3.png" alt="Product 3" />
+                        </div>
+                        
+                        <div class="item-details">
+                            <div class="item-top">
+                                <h4>Parle Hide & Seek 200gm</h4>
+                                <button class="remove-btn">&times;</button>
+                            </div>
+                            
+                            <div class="price_and_quantity">
+                                <div class="quantity-controls">
+                                    <button class="decrease">-</button>
+                                    <span class="quantity">1</span>
+                                    <button class="increase">+</button>
+                                </div>
+                                <p class="product-price">
+                                    $<span class="dollars">19</span><span class="cents">.95</span>
+                                </p>
+                            </div>
+                       
+                        </div>
+                        
+                        
+                    </li>
+                    <div class="seperator"></div>
+                    <li class="cart-item">
+                        <div class="img-wrapper">
+                            <img src="images/product-images/product4.png" alt="Product 4" />
+                        </div>
+                        
+                        <div class="item-details">
+                            <div class="item-top">
+                                <h4>Girnar Tbag Cardamom 100Bags</h4>
+                                <button class="remove-btn">&times;</button>
+                            </div>
+                            
+                            <div class="price_and_quantity">
+                                <div class="quantity-controls">
+                                    <button class="decrease">-</button>
+                                    <span class="quantity">1</span>
+                                    <button class="increase">+</button>
+                                </div>
+                                <p class="product-price">
+                                    $<span class="dollars">19</span><span class="cents">.95</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li> 
+                    <div class="seperator"></div> -->
+                </ul>
+            </div>
+            
+
+            <div class="cart-footer">
+                <div class="subtotal">
+                    <h3>Subtotal</h3>
+                    <p class="product-price">
+                        $<span class="dollars">0</span><span class="cents">.00</span>
+                    </p>
+                </div>
+                
+            
+            <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+        </div>
+
+
     <!-- Linking custom script -->
     <script src="script.js"></script>
+    <script src="cart.js"></script>
     </main>
 
     <footer>
@@ -307,3 +439,4 @@
 
 
 </html>
+

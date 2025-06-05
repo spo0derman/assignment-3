@@ -343,3 +343,7 @@
   display: none;
 }
 
+.products a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}

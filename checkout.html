@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Checkout</title>
+<link rel="stylesheet" href="checkout.css" />
+</head>
+<body>
+  <main class="checkout-container">
+    <section class="checkout-main">
+      <form id="checkout-form">
+        <h2>Contact</h2>
+        <label>
+          <input type="email" placeholder="Email" required />
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" />
+          <span>Email me with news and offers</span>
+        </label>
+
+        <h2>Delivery</h2>
+        <label>
+          <select required>
+            <option value="">Country/Region</option>
+            <option>Australia</option>
+            <option>New Zealand</option>
+          </select>
+        </label>
+        <div class="two-cols">
+          <label>
+            <input type="text" placeholder="First name (optional)" />
+          </label>
+          <label>
+            <input type="text" placeholder="Last name" required />
+          </label>
+        </div>
+        <label>
+          <input type="text" placeholder="Address" required />
+        </label>
+        <label>
+          <input type="text" placeholder="Apartment, suite, etc. (optional)" />
+        </label>
+        <div class="three-cols">
+          <label>
+            <input type="text" placeholder="City" required />
+          </label>
+          <label>
+            <select required>
+                <option value="">State</option>
+                <option>Australian Capital Territory</option>
+                <option>New South Wales</option>
+                <option>Northern Territory</option>
+                <option>Queensland</option>
+                <option>South Australia</option>
+                <option>Tasmania</option>
+                <option>Victoria</option>
+                <option>Western Australia</option>
+            </select>
+        </label>
+          <label>
+            <input type="text" placeholder="ZIP code" required />
+          </label>
+        </div>
+        <label>
+          <input type="tel" placeholder="Phone (optional)" />
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" />
+          <span>Save this information for next time</span>
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" />
+          <span>Text me with news and offers</span>
+        </label>
+
+        <h2>Shipping method</h2>
+        <p class="shipping-placeholder">Enter your shipping address to view available shipping methods.</p>
+
+        <h2>Payment</h2>
+        <div class="payment-box">
+          <div class="payment-header">
+            <div>
+                <input type="radio" checked />
+                <span>Credit card</span>
+            </div>
+
+            <div>
+                <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa" />
+                <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard" />
+                <img src="https://img.icons8.com/color/48/000000/amex.png" alt="Amex" />
+            </div>
+          </div>
+          <label>
+            <input type="text" placeholder="Card number" required />
+          </label>
+          <div class="two-cols">
+            <label>
+              <input type="text" placeholder="Expiration date (MM / YY)" required />
+            </label>
+            <label>
+              <input type="text" placeholder="Security code" required />
+            </label>
+          </div>
+          <label>
+            <input type="text" placeholder="Name on card" required />
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" checked />
+            <span>Use shipping address as billing address</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="radio" name="payment-option" />
+            <span>Buy Now, Pay Later with Sezzle</span>
+          </label>
+        </div>
+        <button type="submit" class="complete-btn">Pay now</button>
+      </form>
+    </section>
+
+    <aside class="checkout-summary">
+      <h2>Order Summary</h2>
+      <ul class="summary-items"></ul>
+      <div class="summary-total">
+        <span>Total</span>
+        <span class="total-price">$0.00</span>
+      </div>
+    </aside>
+
+  </main>
+  <script src="checkout.js"></script>
+
+</body>
+</html>

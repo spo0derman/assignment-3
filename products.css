@@ -44,6 +44,11 @@
     gap: 20px;
 }
 
+.products a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .p2 {
     height: 70%;
     width: auto;

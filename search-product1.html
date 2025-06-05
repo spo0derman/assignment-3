@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="banner.css">
     <link rel="stylesheet" href="products.css">
     <link rel="stylesheet" href="product-list.css">
+    <link rel="stylesheet" href="cart.css">
     <title>Document</title>
 </head>
 <body>
@@ -27,10 +28,10 @@
         <div class="search-results">
             <ul class="search-list">
                 <p class="suggestions-title">Suggestions</p>
-                <li><a href="product-page1.html">noodles</a></li>
-                <li><a href="product-page2.html">ghee</a></li>
-                <li><a href="product-page3.html">biscuits</a></li>
-                <li><a href="product-page4.html">tea bags</a></li>
+                <li><a href="search-product1.html">noodles</a></li>
+                <li><a href="search-product2.html">ghee</a></li>
+                <li><a href="search-product3.html">biscuits</a></li>
+                <li><a href="search-product4.html">tea bags</a></li>
             </ul>
         </div>
     </div>
@@ -132,43 +133,183 @@
 
     <div class="products-container carousel-container">
         <ul class="carousel products layout-3x4">
-            <li class="item product-item">
-                <div class="image-box">
-                <img src="images/product-images/product1.png" alt="Product 1" class="product-image p1" />
-                <button class="product-cart material-symbols-rounded"> shopping_bag </button>
-                </div>
-                <div class="product-details">
-                <h3 class="product-title">Maggi Masala Noodles 560Gm</h3>
-                <p class="product-description">Classic instant noodles bursting with bold Indian spices for a quick, flavorful meal.</p>
-                <p class="product-price">
-                    $<span class="dollars">4</span><span class="cents">.50</span>
-                </p>
-                <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </li>
+            <a href="product-page1.html">
+                <li class="item product-item">
+                    
+                        <div class="image-box">
+                        <img src="images/product-images/product1.png" alt="Product 1" class="product-image p1" />
+                        <button class="product-cart material-symbols-rounded"> shopping_bag </button>
+                        </div>
+                        <div class="product-details">
+                        <h3 class="product-title">Maggi Masala Noodles 560Gm</h3>
+                        <p class="product-description">Classic instant noodles bursting with bold Indian spices for a quick, flavorful meal.</p>
+                        <p class="product-price">
+                            $<span class="dollars">4</span><span class="cents">.50</span>
+                        </p>
 
-            <!-- Repeat the same structure for the next 8 products -->
-            <li class="item product-item">
-                <div class="image-box">
-                <img src="images/product-images/product1.png" alt="Product 1" class="product-image p1" />
-                <button class="product-cart material-symbols-rounded"> shopping_bag </button>
-                </div>
-                <div class="product-details">
-                <h3 class="product-title">Maggi Masala Noodles 560Gm</h3>
-                <p class="product-description">Classic instant noodles bursting with bold Indian spices for a quick, flavorful meal.</p>
-                <p class="product-price">
-                    $<span class="dollars">4</span><span class="cents">.50</span>
-                </p>
-                <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </li>
+                        <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    
+                </li>
+            </a>
+
+            <a href="product-page1.html">
+                <li class="item product-item">
+                    
+                        <div class="image-box">
+                        <img src="images/product-images/product1.png" alt="Product 1" class="product-image p1" />
+                        <button class="product-cart material-symbols-rounded"> shopping_bag </button>
+                        </div>
+                        <div class="product-details">
+                        <h3 class="product-title">Maggi Masala Noodles 560Gm</h3>
+                        <p class="product-description">Classic instant noodles bursting with bold Indian spices for a quick, flavorful meal.</p>
+                        <p class="product-price">
+                            $<span class="dollars">4</span><span class="cents">.50</span>
+                        </p>
+
+                        <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    
+                </li>
+            </a>
 
         </ul>
     </div>
 
+    <div class="cart-overlay hidden" id="cart-overlay">
+        <div class="cart-content">
+            
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <button id="close-cart-btn" class="close-btn">&times;</button>
+            </div>
+            
+            <div class="cart-main">
+
+                <ul class="cart-items">
+                    <!-- <li class="cart-item">
+                        <div class="img-wrapper">
+                            <img src="images/product-images/product1.png" alt="Product 1" />
+                        </div>
+                        
+                        <div class="item-details">
+                            <div class="item-top">
+                                <h4>Maggi Masala Noodles 560Gm</h4>
+                                <button class="remove-btn">&times;</button>
+                            </div>
+                            
+                            <div class="price_and_quantity">
+                                <div class="quantity-controls">
+                                    <button class="decrease">-</button>
+                                    <span class="quantity">1</span>
+                                    <button class="increase">+</button>
+                                </div>
+                                <p class="product-price">
+                                    $<span class="dollars">19</span><span class="cents">.95</span>
+                                </p>
+                            </div>
+                       
+                        </div>
+                        
+                    </li>
+                    <div class="seperator"></div>
+                    <li class="cart-item">
+                        <div class="img-wrapper">
+                            <img src="images/product-images/product2.png" alt="Product 2" />
+                        </div>
+                        
+                        <div class="item-details">
+                            <div class="item-top">
+                                <h4>Amul Ghee 1Ltr</h4>
+                                <button class="remove-btn">&times;</button>
+                            </div>
+                            
+                            <div class="price_and_quantity">
+                                <div class="quantity-controls">
+                                    <button class="decrease">-</button>
+                                    <span class="quantity">1</span>
+                                    <button class="increase">+</button>
+                                </div>
+                                <p class="product-price">
+                                    $<span class="dollars">19</span><span class="cents">.95</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="seperator"></div>
+                    <li class="cart-item">
+                        <div class="img-wrapper">
+                            <img src="images/product-images/product3.png" alt="Product 3" />
+                        </div>
+                        
+                        <div class="item-details">
+                            <div class="item-top">
+                                <h4>Parle Hide & Seek 200gm</h4>
+                                <button class="remove-btn">&times;</button>
+                            </div>
+                            
+                            <div class="price_and_quantity">
+                                <div class="quantity-controls">
+                                    <button class="decrease">-</button>
+                                    <span class="quantity">1</span>
+                                    <button class="increase">+</button>
+                                </div>
+                                <p class="product-price">
+                                    $<span class="dollars">19</span><span class="cents">.95</span>
+                                </p>
+                            </div>
+                       
+                        </div>
+                        
+                        
+                    </li>
+                    <div class="seperator"></div>
+                    <li class="cart-item">
+                        <div class="img-wrapper">
+                            <img src="images/product-images/product4.png" alt="Product 4" />
+                        </div>
+                        
+                        <div class="item-details">
+                            <div class="item-top">
+                                <h4>Girnar Tbag Cardamom 100Bags</h4>
+                                <button class="remove-btn">&times;</button>
+                            </div>
+                            
+                            <div class="price_and_quantity">
+                                <div class="quantity-controls">
+                                    <button class="decrease">-</button>
+                                    <span class="quantity">1</span>
+                                    <button class="increase">+</button>
+                                </div>
+                                <p class="product-price">
+                                    $<span class="dollars">19</span><span class="cents">.95</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li> 
+                    <div class="seperator"></div> -->
+                </ul>
+            </div>
+            
+
+            <div class="cart-footer">
+                <div class="subtotal">
+                    <h3>Subtotal</h3>
+                    <p class="product-price">
+                        $<span class="dollars">0</span><span class="cents">.00</span>
+                    </p>
+                </div>
+                
+            
+            <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+        </div>
+
     <!-- Linking custom script -->
     <script src="script.js"></script>
     <script src="product-list.js"></script>
+    <script src="cart.js"></script>
     </main>
 
     <footer>

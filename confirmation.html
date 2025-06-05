@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"/>
+
+<title>Order Confirmation</title>
+<link rel="stylesheet" href="confirmation.css" />
+</head>
+<body>
+  <main class="confirmation-container">
+    <section class="confirmation-left">
+      <button class="material-symbols-rounded check-icon">done</button>
+      <h2>Hi <span id="customer-name">[Customer Name]</span>,</h2>
+      <h1>Thank you for your order!</h1>
+    </section>
+    <section class="confirmation-right">
+      <h3>Order Details:</h3>
+      <h2><strong>Order Date:</strong> <span id="order-date">[Order date]</span></h2>
+      <h2><strong>Total Paid:</strong> $<span id="order-total">0.00</span></h2>
+      <p>We’re packing your favourite Indian groceries with care and getting them ready for delivery.</p>
+      <p>Thank you for shopping with India At Home — your support helps us bring authentic flavours closer to home.</p>
+      <p>We hope you enjoy your order and can’t wait to serve you again!</p>
+      <h3>Happy Cooking!</h3>
+      <h3>Team India At Home</h3>
+      <button class="return-btn" onclick="location.href='index.html'">Return to Home</button>
+    </section>
+  </main>
+  <script src="confirmation.js"></script>
+</body>
+</html>
