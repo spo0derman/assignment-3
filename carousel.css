@@ -17,7 +17,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  
+  overflow-x: auto;
   scroll-behavior: smooth;
   
   list-style: none;
