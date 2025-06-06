@@ -8,7 +8,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  max-width: 1200px;
+  
   width: 90%;
   margin: 0 auto;
 }
@@ -17,7 +17,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  overflow-x: auto;
+  
   scroll-behavior: smooth;
   
   list-style: none;
@@ -37,6 +37,7 @@ body {
 
 .carousel-button {
   background-color:unset;
+  
   border: none;
   font-size: 24px;
   cursor: pointer;
@@ -69,6 +70,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .categories-carousel {
+    margin-top: 30px;
+  }
   .categories-carousel .carousel {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 items per row */
@@ -78,5 +82,9 @@ body {
 
   .carousel-button {
     display: none; /* Hide arrows on mobile */
+  }
+
+  .item-title{
+    font-size: 1.00rem;
   }
 }

@@ -85,10 +85,12 @@
 
   .banner-item .text-button {
     order: 1;
+    align-self: center;
+    left: 0;
   }
 
   .banner-one .product, .text-button{
-    margin: 20px 0;
+    margin: 20px auto;
     width: 90%;
 }
 
@@ -97,6 +99,7 @@
     position: relative;
     left: 0;
     bottom: 0;
+    
   }
 
 

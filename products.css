@@ -28,6 +28,7 @@
     align-items: center;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 12px -12px 12px -4px rgba(0,0,0,0.12);
     
 }
 
@@ -98,5 +99,10 @@
 @media (max-width: 768px) {
     .products-container {
         margin-left: 30px;
+    }
+
+    .product-cart {
+        display: none; /* Hide cart icon on mobile */
+        cursor: none;   /* Disable pointer events */
     }
 }

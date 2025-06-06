@@ -3,6 +3,7 @@ Cart Overlay Logic
 ************************************/
 const cartBtn = document.querySelector('.shopping-cart');
 const cartOverlay = document.getElementById('cart-overlay');
+// const main_overlay = document.querySelector(".dark-overlay");
 const closeCartBtn = document.getElementById('close-cart-btn');
 const cartItemsList = cartOverlay.querySelector('.cart-items');
 const subtotalDollars = cartOverlay.querySelector('.cart-footer .dollars');
@@ -115,6 +116,12 @@ document.querySelectorAll('.product-cart').forEach(btn => {
   btn.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
+
+    // open the cart overlay if it's not already open
+    cartOverlay.classList.remove('hidden');
+    cartOverlay.classList.add('open');
+    main_overlay.classList.remove("hidden");
+
   });
 
   btn.addEventListener('click', () => {

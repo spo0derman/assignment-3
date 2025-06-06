@@ -92,4 +92,24 @@ body {
     width: 100%;
     padding: 20px;
   }
+
+  .confirmation-left h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+  }
+
+  .confirmation-left .check-icon {
+    font-size: 50px;
+  }
+
+  .confirmation-right p {
+    margin-bottom: 15px;
+    line-height: 1.4;
+    font-size: 0.9rem;
+    width: 90%;
+  }
+
+  .return-btn {
+    width: 60%;
+  }
 }

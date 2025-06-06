@@ -17,7 +17,7 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
-  flex: 1 1 300px;
+  flex: 1 1;
 }
 
 .checkout-main h2,
@@ -175,4 +175,24 @@ label input, label select {
   border-top: 2px solid #ccc;
   margin-top: 10px;
   font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .checkout-container {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .checkout-summary {
+    background-color: #FBE8D3;
+    margin: 0;
+    order: 0; /* Move summary to the top on mobile */
+  }
+
+  .checkout-main {
+    order: 1; /* Main content below summary on mobile */
+    margin: 0;
+  }
+
+
 }
