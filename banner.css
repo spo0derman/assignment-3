@@ -1,6 +1,7 @@
 .banner{
     width: 100vw;
     height: 40vh;
+    overflow-x: hidden;
 }
 
 .banner-one{
@@ -17,6 +18,7 @@
 .banner-images {
   display: flex;
   margin: 0 3vw;
+  
 }
 
 .banner-one .product, .text-button{
