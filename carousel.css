@@ -67,3 +67,16 @@ body {
     text-decoration: none;
     color: inherit;
 }
+
+@media (max-width: 768px) {
+  .categories-carousel .carousel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 20px;
+    overflow: unset; /* Remove scrolling for grid */
+  }
+
+  .carousel-button {
+    display: none; /* Hide arrows on mobile */
+  }
+}

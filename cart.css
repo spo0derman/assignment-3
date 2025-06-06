@@ -203,3 +203,12 @@
   margin: 10px auto;
   border-radius: 20px;;
 }
+
+@media (max-width: 768px) {
+  .cart-overlay {
+    width: 100vw; /* Full width on mobile */
+    height: 100vh; /* Full height on mobile */
+    left: 0;
+    right: 0;
+  }
+}

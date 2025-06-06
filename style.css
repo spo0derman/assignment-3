@@ -1,66 +1,57 @@
+/* Global Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-  height: 100%;
   margin: 0;
-    max-width: 100vw;
-    max-height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body Styling */
-body {
+html, body {
+  height: 100%;
+  width: 100%;
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
   color: #333;
   background: #F4DCC6;
+}
+
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 main {
-  flex: 1; /* Allow main to grow and fill the space */
+  flex: 1;
+  margin-top: 12vh; /* offset for fixed nav */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 /* Navigation */
 nav {
   position: fixed;
-  z-index: 999; /* Ensure nav is on top */
+  top: 0;
+  width: 100vw;
+  height: 12vh;
+  background: #FFF8F1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2vw;
-  width: 100%;
-  height: 12vh;
-  background: #FFF8F1;
-  transition: top 0.3s ease;
+  z-index: 999;
 }
 
-.nav-left,
-.nav-center,
-.nav-right {
+.nav-left, .nav-center, .nav-right {
   display: flex;
   align-items: center;
   gap: 1vw;
-}
-
-.nav-center {
-  justify-content: center;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 0.5rem;
 }
 
 nav ul li a {
@@ -78,29 +69,46 @@ nav img.logo {
   height: 100px;
 }
 
-nav button {
+.shopping-cart, .person-icon, .search, .menu-toggle {
+  font-size: 3rem;
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
-
-/* Make the search overlay cover the whole viewport with some transparency */
-/* Basic overlay covering the whole screen */
-.search-overlay {
-  position: fixed;
-  top: 12vh;
+/* Delivery Banner */
+#delivery {
+  background: #C0392B;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
   width: 100%;
+}
+
+/* Search Overlay */
+.search-overlay, .dark-overlay {
+  position: fixed;
+  width: 100%;
+  
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.search-overlay {
+  top: 12vh;
   height: 30%;
   background-color: #FFF8F1; /* Light white overlay */
   z-index: 1000; /* On top of everything */
+  display: flex;
   justify-content: flex-start;
   align-items: flex-start; /* Top-aligned content */
   flex-direction: column;
 }
 
-.search-overlay,
 .dark-overlay {
-  opacity: 1;
-  transition: opacity 0.3s ease;
+  height: 100vh;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .hidden {
@@ -108,54 +116,37 @@ nav button {
   pointer-events: none; /* also disable interaction when hidden */
 }
 
-
-.dark-overlay {
-  display: flex;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  z-index: 998;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-/* Search bar itself */
 .search-bar {
   display: flex;
   align-items: center;
   width: 80%;
   max-width: 600px;
-  margin: 30px auto 10px auto; /* Centered with some top margin */
+  margin: 1rem auto;
   background: #FBE8D3;
   border-radius: 999px;
   padding: 0.5rem 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Search input */
- .search-bar input[type="text"] {
+.search-bar input[type="text"] {
   flex: 1;
   border: none;
-  outline: none;
   background: transparent;
   font-size: 1rem;
-  padding: 0.5rem;
+  outline: none;
 }
 
-/* Close button */
-.search-overlay .close-search {
+.close-search {
+  font-size: 1.5rem;
   background: none;
   border: none;
-  font-size: 1.5rem;
   cursor: pointer;
   margin-left: 1rem;
 }
 
-/* Example search results list */
-.search-overlay .search-results {
+.search-results {
   width: 80%;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .search-overlay .search-results .search-list {
@@ -164,102 +155,118 @@ nav button {
   margin-left: 25px;
 }
 
-.search-overlay .search-results .suggestions-title {
+.suggestions-title {
   font-weight: bold;
-  font-size: larger;
-  
-  margin-bottom: 0.5rem;
-  color: #3E302B;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
 }
 
-.search-overlay .search-results li {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-  cursor: pointer;
+.search-results li {
+  margin: 0.3rem 0;
+}
+
+.search-results li a {
+  text-decoration: underline;
   color: #333;
 }
 
-.search-overlay .search-results li a {
-  color: inherit; /* Inherit color from li */
-  text-decoration: underline; 
-}
-
-.search-overlay .search-results li:hover {
-  text-decoration: underline;
-}
-
-/* Smooth fade-in/out if desired */
-.search-overlay.show {
-  animation: fadeIn 0.3s ease forwards;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-
-
-
-/* Main Content */
-main {
-    margin-top: 12vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+/* Images */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-#delivery {
-    z-index: 1000;
-    background: #C0392B;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
+.banner {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
 }
-
-.shopping-cart, .person, .search {
-    font-size: 3rem;
-    border: none;
-    background: none;
-}
-
-.banner-image {
-    width: 100vw;
-    height: auto;
-}
+/* Product Images & Banner */
+.banner-image,
 .groceries-banner {
-    width: 90vw;
-    height: auto;
+  width: 100%;
+  height: auto;
+}
+
+
+
+.hotdeals {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
 }
 .product-image {
-    width: 100%;
-    height: auto;
-    max-width: 90%; 
-    max-height: 90%; 
-    margin: 20px 0; 
+  max-width: 90%;
+  margin: 20px 0;
 }
-
-.shop-now {
-  cursor: pointer;
-}
-
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto; /* sticky! */
 }
 
 footer p {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
+
+/* Responsive Adjustments */
+/* Common styles */
+.menu-toggle {
+  display: none; /* Hidden by default for desktop */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+  .breadcrumbs {
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    margin: 10px;
+    gap: 0.2rem;
+  }
+
+  .breadcrumbs .bc-item {
+    width: auto;
+    margin: 0;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .nav-center li:not(.logo-item) {
+    display: none; /* hide all li’s except the logo one */
+  }
+
+
+  .person-icon {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-block; /* show hamburger icon */
+  }
+
+  nav img.logo {
+    display: block; /* ensure logo stays visible */
+    height: 70px;
+  }
+
+  .search-overlay {
+    width: 100%;
+    height: 100%;
+    top: 0; /* cover the entire viewport */
+    left: 0;
+    padding: 1rem; /* add some padding */
+  }
+
+  #delivery {
+    font-size: 0.8rem; /* smaller font size for mobile */
+  }
+
+}
+
+

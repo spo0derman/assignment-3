@@ -94,3 +94,9 @@
   font-size: 0.8rem;  /* smaller size for cents */
   vertical-align: super;  /* lifts cents up */
 }
+
+@media (max-width: 768px) {
+    .products-container {
+        margin-left: 30px;
+    }
+}

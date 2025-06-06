@@ -14,6 +14,11 @@
     background: linear-gradient(to right, #C0392B, #F6D365);
 }
 
+.banner-images {
+  display: flex;
+  margin: 0 3vw;
+}
+
 .banner-one .product, .text-button{
     width: 40vw;
 }
@@ -44,5 +49,56 @@
     position: absolute;
     bottom: -90px;
     color: #C0392B;
+}
+
+@media (max-width: 768px) {
+
+    .banner-one {
+        background: linear-gradient(to bottom, #C0392B, #F6D365)
+    }
+  .banner-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-item .banner-images {
+    order: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .banner-item .banner-images .person {
+    width: 40%;
+    height: auto;
+  }
+
+  .banner-item .banner-images .product {
+    width: 60%;
+    height: auto;
+  }
+
+  .banner-item .text-button {
+    order: 1;
+  }
+
+  .banner-one .product, .text-button{
+    margin: 20px 0;
+    width: 90%;
+}
+
+.banner-one .product, .text-button .shop-now {
+    width: 40%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+
+
 }
 

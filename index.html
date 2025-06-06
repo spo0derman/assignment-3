@@ -22,16 +22,20 @@
     </section>
     
      <nav>
+        
+        <button class="material-symbols-rounded menu-toggle">menu</button>
+        
         <ul class="nav-left">
             <li>
                 <button class="search material-symbols-rounded open-search"> search </button>
             </li>
+            
         </ul>
 
         <ul class="nav-center">            
             <li><a href="#home">All Categories</a></li>
             <li><a href="#products">About Us</a></li>
-            <li>
+            <li class="logo-item">
                 <a href="index.html">
                     <img src="logo.avif" alt="logo image" class="logo">
                 </a>
@@ -42,7 +46,7 @@
 
         <ul class="nav-right">
             <li>
-                <button class="person material-symbols-rounded"> person </button>
+                <button class="person-icon material-symbols-rounded"> person </button>
             </li>
 
             <li> 
@@ -81,14 +85,17 @@
                         <button class="shop-now" onclick="location.href='product-list.html'">Shop Now</button>
                     </div>
                     
-                    <img src="images/b1-1pers.png" alt="woman" class="person">
-                    <img src="images/b1-1prod.png" alt="products" class="product">
+                    <div class="banner-images">
+                        <img src="images/b1-1pers.png" alt="person" class="person">
+                        <img src="images/b1-1prod.png" alt="products" class="product">
+                    </div>
+                    
                     
                 </li>
             </ul>
         </div>
 
-        <div class="carousel-container">
+        <div class="carousel-container categories-carousel">
             <button class="carousel-button categories-nav left">&lt;</button>
             
             <ul class="carousel categories">
